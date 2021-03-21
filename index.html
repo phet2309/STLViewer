@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STL viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
+      integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
+      crossorigin="anonymous"></script>
+    <script src="./Js/STLLoader.js"></script>
+    <script src="./Js/OrbitControls.js"></script>
+    <script type = "text/javascript" src="./Js/script.js"></script>  
+  </head>
+  <body>
+    <div id="model" style="width: 100vw; height: 100vh"></div>
+    <script type="text/javascript">
+      window.onload = function () {
+        helper("Shoulder_Bone.stl", "model");
+      };
+    </script>
+  </body>
+</html>
